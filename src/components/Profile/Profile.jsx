@@ -4,6 +4,8 @@ import banner from '../../images/banner.png'
 import { RiDoubleQuotesR } from 'react-icons/ri'
 import Slider from "react-slick";
 import slide1 from '../../images/slide1.png'
+
+import * as ft from '../apis'
 import slide3 from '../../images/slide3.png'
 import { FaFacebookF, FaInstagram } from 'react-icons/fa'
 import logo from "../../images/Flixit.png"
@@ -43,7 +45,7 @@ function SamplePrevArrow(props) {
 const Profile = () => {
 const [userProfiles, setuserProfiles] = useState()  
   useEffect(() => {
-    axios.get('http://localhost:4000/api/signup/getallusers').then(res=>{
+    axios.get(`${ft.api}api/signup/getallusers`).then(res=>{
       console.log(res.data.users)
    setuserProfiles(res.data.users)
     

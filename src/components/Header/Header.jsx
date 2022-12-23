@@ -10,6 +10,9 @@ const Header = () => {
   
   const [cookies, setCookie,removeCookie] = useCookies(['id','profile_type']);
   useEffect(() => {
+    if(window.location.pathname.search('admin')>=0){
+      setheader('header2')
+    }
     if(cookies.id){
       setj(1)
 
@@ -49,9 +52,10 @@ const Header = () => {
     }
     
   }
+  const [header, setheader] = useState('header')
   return (
     
-<div className="header">
+<div className={header}>
   <div  className={fixedmenu}>
     <div className="slidemenu">
       <h1 onClick={e=>window.location.pathname='/'} >Home</h1>

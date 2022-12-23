@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import banner from '../../images/banner3.png'
 import firebase from 'firebase'
+
+import * as ft from '../apis'
 import axios from 'axios'
 const Clientsignup = () => {
 
@@ -40,13 +42,13 @@ const [file, setfile] = useState()
         // For instance, get the download URL: https://firebasestorage.googleapis.com/...
         uploadTask3.snapshot.ref.getDownloadURL().then((downloadURL3) => {
           console.log('qual available at', downloadURL3);
-          axios.post('http://localhost:4000/api/client/add',{
+          axios.post(`${ft.api}api/client/add`,{
             name:name,
             email:email,
             password:"12345678",
             phone:phone,
             location:location,
-            profileimage:profileimage,
+            profileimage:downloadURL3,
             bio:bio
 
           }).then((res)=>{

@@ -10,18 +10,12 @@ import bannerx from '../../images/image3.png'
 import { GoStar } from 'react-icons/go'
 import { useEffect } from 'react'
 import axios from 'axios'
+
+import * as ft from '../apis'
 var fitter = 'no'
 var ftype = ""
 function Items({ currentItems }) {
-  useEffect(() => {
-    console.log(currentItems[0].name)
-
-    return () => {
-
-    }
-  }, [])
-
-  return (
+   return (
     <>
 
       {fitter === 'no' && currentItems.map((val) => (
@@ -148,7 +142,6 @@ const Mapprofiles = ({ props }) => {
   };
 
 
-
   useEffect(() => { 
     console.log("props")
 
@@ -228,7 +221,7 @@ const Search = () => {
 
   const [s, sets] = useState(0)
   useEffect(() => {
-    axios.get('http://localhost:4000/api/signup/getallusers').then(res => {
+    axios.get(`${ft.api}api/signup/getallusers`).then(res => {
       console.log(res.data.users)
       setdata2(res.data)
 

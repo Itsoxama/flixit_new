@@ -5,6 +5,7 @@ import banner from '../../images/banner2.png'
 import { useCookies } from 'react-cookie';
 import { useEffect } from 'react';
 
+import * as ft from '../apis'
 const ClientLogin = () => {
 
 
@@ -34,7 +35,7 @@ window.location.pathname='profile'
 
 
 
-    axios.post('http://localhost:4000/api/client/auth', {
+    axios.post(`${ft.api}api/client/auth`, {
       email: email,
       pass: pass
     }).then(res => {

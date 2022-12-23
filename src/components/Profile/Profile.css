@@ -1,5 +1,446 @@
 
 
+.admin{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.admin2{
+    width: 80vw;
+    height: 100vh;
+    background-color: rgb(244, 237, 237);
+}
+.header2{
+    display: none;
+}
+.userstable{
+    position: relative;
+}
+.pagin{
+    width: 90%;
+}
+.pagin>ul>.previous>a{
+    color: white!important;
+
+
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+
+
+}
+.pagin>ul>.next>a{
+    color: white!important;
+
+
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+
+
+}
+.pagin>ul>.next{
+    padding: 5px;
+    
+    margin: 20px;
+    border-radius: 0px;
+    border: none;
+    background-color: #800080;
+    margin-bottom: 0px!important;
+
+    cursor: pointer;
+    color: white;
+    float: right!important;
+    justify-self: flex-end!important;
+}
+
+.pagin>ul>.selected>a{
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    color: white!important;
+}
+.sfilters>button{
+    position: relative;
+}
+.adminfilters>h3{
+    
+    margin-top: 6px!important;
+    margin-bottom: 0px!important;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 22px;
+    color: black;
+}
+.adminfilters>p>input{
+    
+    cursor: pointer;
+}
+.adminfilters>p{
+    cursor: pointer;
+    margin-top: 6px!important;
+    margin-bottom: 0px!important;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: black;
+}
+.adminfilters2{
+    display: none;
+}
+.ppp{
+    margin-top: 30px!important;
+    width: 100%;
+    text-align: center;
+}
+.adminfilters{
+    width: max-content;
+    position: absolute;
+    top: 43px;
+    right: 0;
+    background-color: white;
+    z-index: 9;
+    padding-right: 40px!important;
+    border-radius: 5px;
+    
+    border: 1px solid #800080;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+}
+.pagin>ul>li{
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.pagin>ul>.selected{
+height: 40px;
+width: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 100%;
+background-color: #800080;
+color: white;
+margin: 10px;
+margin-bottom: 0px!important;
+
+}
+.pagin>ul>.previous{
+    margin: 20px;
+    margin-bottom: 0px!important;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 0px;
+    border: none;
+    background-color: #800080;
+
+    color: white;
+}
+
+.pagin>ul>li{
+    align-self: center!important;
+    justify-self: center!important;
+}
+
+.pagin>ul>.disabled{
+    border: none;
+    background-color:rgb(167, 164, 164);
+
+    color: white;
+}
+.admin2{
+    height: 100%;
+    overflow: scroll;
+}
+.pagin>ul{  
+    width: 100%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0px!important;
+}
+.bartop{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.customers{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items:center ;
+    padding-top: 20px;
+
+}
+.bartopbtns{
+    display: flex;
+}
+.admin2{
+display: flex;
+align-items: center;
+
+flex-direction: column;}
+.bartopbtns>button:active{
+    background-color: #990599;
+}
+.bartopbtns>button{
+    padding-left: 15px;
+    padding-right: 15px;
+    height:40px;
+    border-radius: 5px;
+    color: white;
+    background-color: #800080;
+    border: none;
+    
+    margin-bottom: 0px!important;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    margin-right: 10px;
+    letter-spacing: 0px!important;
+    cursor: pointer;
+    color: white;
+  }
+  
+.backbtn{
+    align-self: flex-start!important;
+    justify-self: flex-start!important;
+    margin-left: 50px!important;
+    padding-left: 15px;
+    padding-right: 15px;
+    height:40px;
+    border-radius: 5px;
+    color: white;
+    background-color: #800080;
+    border: none;
+    
+    margin-bottom: 0px!important;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    margin-right: 10px;
+    letter-spacing: 0px!important;
+    cursor: pointer;
+    color: white;
+  }
+  .sfilters>input{
+    border:none;
+    background-color: transparent;
+    border-bottom: 1px solid gray!important;
+    height: 40px;
+  }
+  .sfilters>input:active{
+    outline: none;
+    box-shadow: none!important;
+  }
+  .pindex{
+    margin-left: 15px;
+  }
+  .toprow2>p{
+
+
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 0px!important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+
+
+    color: white;
+  }
+  
+  .toprow3>p{
+
+
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 0px!important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+
+  }
+  
+  .toprow2{
+    background-color: #800080;
+  }
+  .userstable{
+    display:flex;
+    width: 90%;
+    margin-top: 50px;
+    overflow: scroll;
+  }
+  .bartopbtns>button>a{
+    color: white!important;
+  }
+  .toprow{
+    display: flex;
+    width: max-content;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .userstable{
+    margin-top: 25px!important;
+  }
+  .userstable{
+    background-color: white;
+  }
+  .subtable{
+    width: 100%;
+  }
+  .pimage>img{
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+  }
+  .pimage{
+    width: 120px;
+  }
+  .pname{
+    width: 100px;
+  }
+  .pphone{
+    width: 120px;
+
+  }
+  .pservices{
+    
+    width: 200px;
+  }
+  .pbio{
+    width: 200px;
+
+  }
+  .pemail{
+    width: 150px;
+  }
+  .pprofession{
+    width: 150px;
+  }
+  .pservice{
+    width: 150px;
+  }
+.pindex{
+    width: 50px;
+    
+}
+.sfilters>button{
+    
+    padding-left: 15px;
+    padding-right: 15px;
+    height:40px;
+    border-radius: 5px;
+    color: white;
+    background-color: #800080;
+    border: none;
+    
+    margin-bottom: 0px!important;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    margin-left: 10px;
+    letter-spacing: 0px!important;
+    cursor: pointer;
+    color: white;
+  }
+  
+  
+.aply{
+    
+    padding-left: 15px;
+    padding-right: 15px;
+    height:35px;
+    border-radius: 3px;
+    color: white;
+    background-color: #a90a81;
+    border: none;
+    margin-top: 15px!important;
+    
+    margin-bottom: 0px!important;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0px!important;
+    cursor: pointer;
+    color: white;
+  }
+  .btx{
+    display: flex;
+  }
+.cancel{
+    margin-left: 40px;
+    
+    padding-left: 15px;
+    padding-right: 15px;
+    height:35px;
+    border-radius: 3px;
+    color: white;
+    background-color: #848283;
+    border: none;
+    margin-top: 15px!important;
+    
+    margin-bottom: 0px!important;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0px!important;
+    cursor: pointer;
+    color: white;
+  }
+.admin1>h1{
+    
+    margin-top: 6px!important;
+    margin-bottom: 0px!important;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 22px;
+    cursor: pointer;
+    color: white;
+    margin-top: 30px!important;
+
+}
+.admin{
+    background-color: black;
+}
+.admin1{
+    
+    padding-left: 50px;
+    padding-top: 30px;
+    width: 20vw;
+    height: 100%;
+    
+    background: rgba(128, 0, 128, 0.35);
+    display: flex;
+    flex-direction: column;
+
+
+}
+.admin1>h1:hover{
+    color: rgb(183, 178, 178);
+}
+.admin1>img{
+    width: 78px;
+    margin-bottom: 40px;
+}
+
+
 div{
 
     font-family: "Segoe UI", Arial, sans-serif;
@@ -981,6 +1422,39 @@ background: radial-gradient(36.32% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, #000000 
         width: 65%;
         padding-top: 65px;
     }
+    .profiless{
+        position: relative!important    ;
+        background: transparent!important;
+    }
+    .ai1{
+        margin-right: 10px;
+        cursor: pointer;
+        font-size: 25px;
+        color: #800080!important;
+    }
+    
+    .ai2{
+        margin-right: 10px;
+        cursor: pointer;
+        font-size: 25px;
+        color: rgb(185, 5, 5)!important;
+    }
+    
+    .ai3{
+        margin-right: 10px;
+        cursor: pointer;
+        font-size: 25px;
+        color: gray!important;
+    }
+    .profilessx{
+        width: 80%!important;
+    }
+    .doblack::placeholder{
+        color: gray!important;
+    }
+    .doblack{
+        color: black!important;
+    }
 .profilesignup{
     z-index: 9;
     
@@ -1012,6 +1486,7 @@ background: radial-gradient(36.32% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, #000000 
     border-color: #fff transparent #fff transparent;
     animation: lds-dual-ring 1.2s linear infinite;
   }
+
   .contactdiv{
     position: fixed;
     z-index: 199;
@@ -1024,7 +1499,72 @@ background: radial-gradient(36.32% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, #000000 
     align-items: center;
     justify-content: center;
   }
+  
+  .revi{
+    position: fixed;
+    z-index: 199;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .jkio>button{
+    
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 20px!important;
+    margin-bottom: 20px!important;
+    background-color: #800080;
+    border: none;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    margin-right: 10px;
+    letter-spacing: 0px!important;
+    cursor: pointer;
+    color: white;
+
+  }
+  .jkio>textarea{
+    border-radius: 5px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    resize: none;
+    color: #D1D1D1;
+    width: 95%;
+    height: 152px!important;
+    border: none;
+    padding-bottom: 7px;
+    border: 1px solid #990599;
+    background-color: transparent;
+  }
   .contactdiv>div{
+    
+    animation: ring 0.1s linear ;
+    border-radius: 15px;
+    box-shadow: 0px 0px 12px 2px rgba(255,255,255,0.75);
+-webkit-box-shadow: 0px 0px 12px 2px rgba(255,255,255,0.75);
+-moz-box-shadow: 0px 0px 12px 2px rgba(255,255,255,0.75);
+    position: relative;
+    width: 400px;
+    min-height: 300px;
+    padding-top: 50px;
+    padding-left:15px;
+    background-color: black;
+  }
+  .revi2{
+    display: none;
+  }
+  .revi>div{
     
     animation: ring 0.5s linear ;
     border-radius: 15px;

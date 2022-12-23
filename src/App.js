@@ -14,6 +14,7 @@ import Recent from './components/userprofile/Recent';
 import app from './firebase';
 import ClientLogin from './components/Login/Clientlogin';
 import Openprofile from './components/userprofile/Openprofile';
+import Admin from './components/Admin/Admin';
 function App() {
   
   return (
@@ -24,6 +25,7 @@ function App() {
     
     <Route exact path="/" component={Profile} />
     <Route exact path="/login" component={Login} />
+    <Route exact path="/admin" component={Admin} />
     <Route exact path="/client-login" component={ClientLogin} />
     <Route exact path="/signup" component={Signup} />
     <Route exact path="/client-signup" component={Clientsignup} />
